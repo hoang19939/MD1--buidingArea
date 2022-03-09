@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<canvas  id = 'myCanvas' width="1200px" height="600px" style="border: 2px solid #d3d3d3;"></canvas>
+
+<body>
+<script>
+    let Ctx = document.getElementById('myCanvas').getContext ('2d')
+
+    Ctx.rect(0, 0, 200, 100);
+    Ctx.strokeStyle = 'blue'
+    Ctx.stroke();
+
+    Ctx.rect(1000, 0, 200, 100);
+    Ctx.fillStyle = 'blue'
+    Ctx.fill()
+    Ctx.stroke();
+
+    Ctx.rect(1000, 500, 200, 100);
+    Ctx.stroke();
+
+    Ctx.rect(0, 500, 200, 100);
+    Ctx.stroke();
+
+
+
+    Ctx.beginPath()
+    Ctx.arc(100, 200, 100, 0, 2*Math.PI)
+    Ctx.strokeStyle = 'red'
+    Ctx.fillStyle = 'green'
+    Ctx.stroke ();
+    Ctx.fill()
+
+    Ctx.beginPath()
+    Ctx.arc(1100, 400, 100, 0, 2*Math.PI)
+    Ctx.stroke ()   ;
+
+    Ctx.beginPath()
+    Ctx.arc(1100, 200, 100, 0, 2*Math.PI)
+    Ctx.stroke ();
+
+    Ctx.beginPath()
+    Ctx.arc(100, 400, 100, 0, 2*Math.PI)
+    Ctx.stroke ();
+
+
+</script>
+
+
+</body>
+</html>

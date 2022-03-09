@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<canvas id="myCanvas" width="1200px" height="600px" style="border: 1px solid #d3d3d3;"></canvas>
+<body>
+<script>
+    class Reatangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        getArea() {
+            return (this.width * this.height)
+        }
+        setWidth(width) {
+            this.width = width
+        }
+        setHeight(height) {
+            this.height = height
+        }
+        getPerimeter(){
+            return((this.width+this.height)*2)
+        }
+    }
+    let Reatangle1 = new Reatangle(200,100)
+    let Area = Reatangle1.getArea();
+    let Perimeter = Reatangle1.getPerimeter()
+    document.write("<br>"+" Area:", Area + 'm2' + '' +'<br>'+'Perimeter:', Perimeter +'m')
+    let Canvas = document.getElementById('myCanvas');
+    let Ctx = Canvas.getContext ('2d');
+    Ctx.rect(600, 300, 200, 100);
+    Ctx.fillStyle = 'blue'
+    Ctx.fill()
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
